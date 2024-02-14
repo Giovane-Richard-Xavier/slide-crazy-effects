@@ -71,7 +71,7 @@ header a {
 .carousel .list .item .content .title,
 .carousel .list .item .content .topic {
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
   list-style: 1.3em;
 }
 
@@ -276,7 +276,6 @@ header a {
 .carousel.prev .thumbnail .item:nth-child(1) {
   width: 0;
   overflow: hidden;
-  opacity: 0;
   animation: showThumbnail 0.5s linear 1 forwards;
 }
 
@@ -326,7 +325,17 @@ header a {
 }
 
 /* responsive */
-@media (max-width: 678px) {
+@media (max-width: 1024px) {
+  .carousel .list .item .content {
+    top: 10%;
+  }
+
+  .carousel .list .item .content .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
   .carousel .list .item .content {
     padding-right: 0;
   }
